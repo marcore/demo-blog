@@ -1,20 +1,119 @@
 footer {
   background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  font-size: var( --body-font-size-xxs);
+  padding:0;
+}
+
+footer .footer {
+    padding:26px 0;
+    background-color: white;
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 65pc;
+
+}
+
+footer .footer-legal-wrapper {
+    margin: auto;
+    max-width: 65pc;
+    padding:26px 0;
+}
+
+
+
+footer .footer-links-wrapper  .footer-logo {
+    padding-top: 38px 0 26px 0;
+    width: 30%;
+}
+
+footer .footer-logo picture, footer .footer-logo picture img {
+    width:174px;
+    height:auto;
 }
 
 footer .footer p {
   margin: 0;
 }
+footer .footer-legal-icons {
+    margin-bottom:30px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-legal-logo {
+    width: 130px;
+    padding:0;
+   
+}
+footer .footer-legal-logo picture img{
+  display: block;
+  height: 36px!important;
+  width: 130px!important;
+}
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+footer .footer-legal--social-networks {
+    display: flex;;
+}
+
+footer .footer-legal--social-networks li {
+    list-style: none;
+    display: flex;
+    background-color: #008542;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    margin: 0 1pc 0 0;
+    justify-content: center;
+    align-items: center;
+
+}
+footer .footer-legal--social-networks li a {
+    display: flex;
+}
+
+footer .footer-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .footer-links-wrapper .default-content-wrapper {
+    width: 70%;
+}
+
+footer .footer-links-wrapper  ul > li {
+    list-style: none;
+    color:#008542;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1pc;
+    line-height: 19px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
+}
+footer .footer-links-wrapper  ul > li > ul  {
+    padding-inline-start: 0;;
+}
+footer .footer-links-wrapper  ul > li > ul > li {
+    list-style: none;
+    color:#595f66;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+}
+footer .footer-links-wrapper  ul > li > ul > li a {
+    color:#595f66;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 1pc;
+    text-transform: capitalize;
+}
+
+
+footer .footer-line {
+    background: linear-gradient(90deg,#34af33 14.29%,#dd119a 14.29% 28.57%,#fac52f 28.57% 42.86%,#de0e49 42.86% 57.14%,#6639b4 57.14% 71.43%,#009edb 71.43% 85.71%,#34af33 85.71% 100%);
+    height: 6px;
+    position:relative;
 }

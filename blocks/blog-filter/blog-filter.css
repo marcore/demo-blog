@@ -1,0 +1,102 @@
+.blog-filter > div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.blog-filter > div > div {
+    order: 1;
+  }
+
+.blog-filter.light {
+    margin: 0;
+    padding: 15px 0;
+}
+.blog-filter div.title  {
+    margin-right: 90pt;
+}
+.blog-filter div.title > * {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+/* Dropdown container */
+.blog-filter .filters {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Adjust width as needed */
+}
+
+/* Dropdown button (styled like a select tag) */
+.blog-filter .dropdown-button {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 15px;;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Dropdown list (hidden by default) */
+.blog-filter .filters-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Dropdown list items */
+.blog-filter .filters-list li {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect for list items */
+.blog-filter .filters-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown list when active */
+.blog-filter .filters.open .filters-list {
+    display: block;
+}
+
+/* First list item visible by default */
+.blog-filter .filters .dropdown-button::after {
+    content: attr(data-selected); /* Display the selected item */
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Hide the first item from the dropdown list when open */
+.blog-filter .filters.open .filters-list li:first-child {
+    display: none;
+}
+
+.blog-filter-container {
+    margin-bottom:0;
+}

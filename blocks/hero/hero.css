@@ -7,6 +7,7 @@
   position: relative;
   padding: 40px 24px;
   min-height: 300px;
+  height: 600px
 }
 
 .hero h1 {
@@ -28,6 +29,12 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.hero-wrapper .footer_line {
+    background: linear-gradient(90deg, #34af33 14.29%, #dd119a 14.29% 28.57%, #fac52f 28.57% 42.86%, #de0e49 42.86% 57.14%, #6639b4 57.14% 71.43%, #009edb 71.43% 85.71%, #34af33 85.71% 100%);
+    height: 6px;
+    position: relative;
 }
 
 @media (width >= 900px) {

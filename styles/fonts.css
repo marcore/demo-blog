@@ -1,36 +1,32 @@
-/* stylelint-disable max-line-length */
+
 @font-face {
-  font-family: roboto-condensed;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/6203284/6603ac4e-c5cb-4c6a-99a9-3305b8a57d80.woff2) format("woff2"),url(../../fonts/b30e3513-7d0f-420a-a90a-403c77a2c594.woff) format("woff")
 }
 
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/6203280/51122759-27ac-4273-95a4-ea8d6f148567.woff2) format("woff2"),url(../fonts/d89f79ab-8508-4213-96a9-6593d0973955.woff) format("woff")
 }
 
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/roboto-medium.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/5e7b64ca-2469-4205-8f5e-5e5a0b2dfbf6.woff2) format("woff2"),url(../fonts/0f1b2cfa-cc40-4454-856f-dca3cc6ee855.woff) format("woff")
 }
 
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/16638511-b98c-4ae0-a0bb-740892a52b37.woff2) format("woff2"),url(../fonts/96ef4f09-9805-46e3-8d9c-1bc48abc2cf4.woff) format("woff")
 }
