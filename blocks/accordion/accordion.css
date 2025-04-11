@@ -9,7 +9,6 @@
 }
 
 .accordion details p {
-    margin-bottom: 0.8em;
     font-size: var(--body-font-size-s);
     line-height: 1.25rem;
     margin: 0 .5rem;
@@ -56,6 +55,7 @@
     border-top:2px solid #ececec
 
 }
+
 .legal.accordion-container .accordion-item {
     position:relative;
 }
@@ -63,6 +63,7 @@
 .legal.accordion-container .accordion {
     padding-left:calc(50% - 520px + 2rem)
 }
+
 .legal.accordion-container .accordion .accordion-item-label {
     font-weight:500;
     color:black;
@@ -71,7 +72,7 @@
     position:absolute;
     top: -40px;
     background-color: white;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 1rem 1.5rem 1.5rem;
     border:2px solid #ececec
 
 }

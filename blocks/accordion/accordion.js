@@ -12,57 +12,6 @@ function createAccordionItem(title, content) {
   return details;
 }
 
-async function decorateCardsAccordion(block) {
-  try {
-    const rows = [...block.children];
-    const accordionData = [];
-    let currentTitle = '';
-    let currentTags = [];
-
-    // First pass: collect all titles and tags
-    for (let i = 0; i < rows.length; i += 1) {
-      const row = rows[i];
-      const [label, value] = [...row.children];
-      const labelText = label?.textContent.trim().toLowerCase();
-
-      if (labelText === 'tags') {
-        currentTags = value?.textContent.trim()
-          .split(',')
-          .map((tag) => tag.trim())
-          .filter(Boolean);
-      } else {
-        if (currentTitle) {
-          accordionData.push({ title: currentTitle, tags: currentTags });
-        }
-        currentTitle = label?.textContent.trim();
-        currentTags = [];
-      }
-    }
-
-    // Add the last section if it exists
-    if (currentTitle && currentTags.length) {
-      accordionData.push({ title: currentTitle, tags: currentTags });
-    }
-
-    // Fetch all data concurrently
-    const accordions = await Promise.all(
-      accordionData.map(async ({ title, tags }) => {
-        const filteredData = await fetchAndFilterDataCourse(tags);
-        const cards = filteredData.map(createDynamicCard);
-        const cardsBlock = createCardsBlock(cards);
-        return createAccordionItem(title, cardsBlock);
-      }),
-    );
-
-    // Replace content with accordions
-    block.textContent = '';
-    block.append(...accordions);
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error('Error loading query index data:', error);
-  }
-}
-
 function decorateAccordion(block) {
   [...block.children].forEach((row) => {
     const [label, body] = [...row.children];
@@ -75,9 +24,5 @@ function decorateAccordion(block) {
 }
 
 export default async function decorate(block) {
-  if (block.classList.contains('cards')) {
-    await decorateCardsAccordion(block);
-  } else {
-    decorateAccordion(block);
-  }
+  decorateAccordion(block);
 }

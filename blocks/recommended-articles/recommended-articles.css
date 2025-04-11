@@ -1,11 +1,13 @@
 .recommended-articles {
     background-color: white;
 }
+
 .recommended-articles > div {
     display: flex;
     padding: 1rem;
     position:relative;
-} 
+}
+
 .recommended-articles .title{
     align-items: center;
     background:  var(--link-color);
@@ -15,6 +17,7 @@
     justify-content: center;
     padding: 2rem;
 }
+
 .recommended-articles h3 {
     color: #303030;
     font-size: .875rem;
@@ -24,6 +27,7 @@
     margin-top: 1rem;
     text-transform: uppercase;
 }
+
 .recommended-articles h3.article-box-number {
     font-size: 2.75rem;
     font-weight: 200;
@@ -33,6 +37,7 @@
     display: flex;
     line-height: 42px;
 }
+
 .recommended-articles  a {
     color: var(--text-color);
     border:0;

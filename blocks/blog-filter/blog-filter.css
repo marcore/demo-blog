@@ -15,9 +15,11 @@
     margin: 0;
     padding: 15px 0;
 }
+
 .blog-filter div.title  {
     margin-right: 90pt;
 }
+
 .blog-filter div.title > * {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -60,7 +62,7 @@
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* stylelint-disable-line */ 
     z-index: 10;
 }
 

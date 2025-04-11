@@ -1,19 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-import { getMetadata } from './aem.js';
-
-/**
- * Language
- */
-function getCurrentLang() {
-  return getMetadata('locale');
-}
-
-function getDefaultLang() {
-  return 'en';
-}
-
-
-
 /**
  * Creates a new HTML element
  */
@@ -34,25 +18,6 @@ function createElement(tagName, attributes, ...children) {
     }
   });
   return el;
-}
-
-
-/**
- * Retrieves tags from the page
- * @returns {Object} Object containing article metadata
- */
-async function getPageTags() {
-  const metadataTags = getMetadata('article:tag');
-  const mapTag = async (tagName) => {
-    const finalName = tagName.trim();
-    const tag = await getTag(finalName);
-    return {
-      name: finalName,
-      title: tag ? tag.title : '',
-    };
-  };
-  const tags = await Promise.all(metadataTags.split(',').map(mapTag));
-  return tags;
 }
 
 /**
@@ -96,7 +61,6 @@ function formatDate(dateString) {
   return `${day} ${month}`;
 }
 
-
 function formatToCentralTime(utcDateString) {
   const utcDate = new Date(utcDateString);
   const options = {
@@ -125,6 +89,5 @@ export {
   addDividerLine,
   parseTime,
   formatDate,
-  getPageTags,
   formatToCentralTime,
 };

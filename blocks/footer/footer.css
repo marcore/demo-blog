@@ -24,7 +24,7 @@ footer .footer-legal-wrapper {
 
 
 footer .footer-links-wrapper  .footer-logo {
-    padding-top: 38px 0 26px 0;
+    padding-top: 38px 0 26px 0; /* stylelint-disable-line */ 
     width: 30%;
 }
 
@@ -36,27 +36,30 @@ footer .footer-logo picture, footer .footer-logo picture img {
 footer .footer p {
   margin: 0;
 }
+
 footer .footer-legal-icons {
     margin-bottom:30px;
     display: flex;
     justify-content: space-between;
 }
+
 footer .footer-legal-logo {
     width: 130px;
     padding:0;
    
 }
+
 footer .footer-legal-logo picture img{
   display: block;
   height: 36px!important;
   width: 130px!important;
 }
 
-footer .footer-legal--social-networks {
+footer .footer-legal--social-networks { /* stylelint-disable-line */ 
     display: flex;;
 }
 
-footer .footer-legal--social-networks li {
+footer .footer-legal--social-networks li { /* stylelint-disable-line */ 
     list-style: none;
     display: flex;
     background-color: #008542;
@@ -69,7 +72,8 @@ footer .footer-legal--social-networks li {
     align-items: center;
 
 }
-footer .footer-legal--social-networks li a {
+
+footer .footer-legal--social-networks li a { /* stylelint-disable-line */ 
     display: flex;
 }
 
@@ -93,9 +97,11 @@ footer .footer-links-wrapper  ul > li {
     flex-direction: column;
     width: 30%;
 }
+
 footer .footer-links-wrapper  ul > li > ul  {
     padding-inline-start: 0;;
 }
+
 footer .footer-links-wrapper  ul > li > ul > li {
     list-style: none;
     color:#595f66;
@@ -103,6 +109,7 @@ footer .footer-links-wrapper  ul > li > ul > li {
     display: block;
     width: 100%;
 }
+
 footer .footer-links-wrapper  ul > li > ul > li a {
     color:#595f66;
     font-weight: 400;

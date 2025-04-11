@@ -7,6 +7,7 @@ async function getConstantValues() {
       constants = response;
     }
   } catch (error) {
+    /* eslint-disable-next-line no-console */
     console.error('Error with constants file', error);
   }
   return constants;
@@ -15,8 +16,10 @@ async function getConstantValues() {
 const formatValues = (values) => {
   const obj = {};
   if (values) {
+    /* eslint-disable-next-line no-return-assign */
     values.forEach(({ name, value }) => (obj[name] = value));
   } else {
+    /* eslint-disable-next-line no-console */
     console.error('Error with constants file', values);
   }
   return obj;
