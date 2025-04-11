@@ -1,0 +1,10 @@
+{
+    "mappings": [
+      "/content/demo-blog/:/",
+      "/content/demo-blog/configuration:/.helix/config.json",
+      "/content/demo-blog/metadata:/metadata.json"
+    ],
+    "includes": [
+      "/content/demo-blog/"
+    ]
+  }

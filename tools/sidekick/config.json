@@ -1,5 +1,7 @@
 {
     "project": "Demo blog",
+    "editUrlLabel": "AEM Editor",
+    "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open",
     "plugins": [
       {
         "id": "library",

@@ -1,2 +1,5 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/1TsRJC-UMNQ5liAGcrc-TIidikhKGi9xl
+  /:
+    url: "https://author-p58809-e1469447.adobeaemcloud.com/bin/franklin.delivery/marcore/demo-blog/ue-xwalk"
+    type: "markup"
+    suffix: ".html"
